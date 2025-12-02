@@ -1,7 +1,6 @@
 import UsersDao from "./dao.js";
 export default function UserRoutes(app) {
  const dao = UsersDao();
-  const createUser = (req, res) => { };
   const deleteUser = async (req, res) => {
       const status = await dao.deleteUser(req.params.userId);
       res.json(status);
