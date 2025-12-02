@@ -30,9 +30,8 @@ function updateCourse(courseId, courseUpdates) {
   return {
     findAllCourses,
     findCoursesForEnrolledUser,
-    createCourse, 
-    deleteCourse, 
+    createCourse,
+    deleteCourse,
     updateCourse
   };
-}
 }
