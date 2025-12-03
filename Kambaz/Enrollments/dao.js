@@ -11,7 +11,7 @@ async function findCoursesForUser(userId) {
  }
 
 
- function enrollUserInCourse(userId, courseId) {
+ async function enrollUserInCourse(userId, courseId) {
    return model.create({
      user: userId,
      course: courseId,
@@ -19,7 +19,7 @@ async function findCoursesForUser(userId) {
    });
  }
 
- function unenrollUserFromCourse(user, course) {
+ async function unenrollUserFromCourse(user, course) {
    return model.deleteOne({ user, course });
  }
 
