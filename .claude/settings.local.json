@@ -3,7 +3,11 @@
     "allow": [
       "Bash(lsof:*)",
       "Bash(xargs kill:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(kill:*)",
+      "Bash(node test-courses.js:*)",
+      "Bash(node seed-database.js:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []
